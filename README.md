@@ -2,12 +2,32 @@
 
 Enterprise-grade research skill for AI agents. Agent-orchestrated, Python-free, free-first providers.
 
+## Why This Skill Exists
+
+Research is one of the most common tasks AI agents perform, yet existing solutions often rely on Python dependencies, paid APIs, or rigid pipelines that break when rate limits hit. This skill exists to solve those problems:
+
+- **No dependencies to install** — The agent is the research engine. No Python, no pip, no environment setup.
+- **Free-first providers** — Uses built-in web search first, falls back to free options before paid ones.
+- **Resilient to failures** — When a provider hits rate limits, it pivots automatically instead of failing.
+- **Transparent methodology** — You see the 8-phase pipeline: SCOPE → PLAN → RETRIEVE → TRIANGULATE → SYNTHESIZE → CRITIQUE → REFINE → PACKAGE.
+
+## Repository
+
+- **GitHub**: [https://github.com/anomalyco/deep-research](https://github.com/anomalyco/deep-research)
+- **Skill README**: [skills/deep-research/README.md](skills/deep-research/README.md)
+
 ## Installation
 
 ```bash
 # Clone and copy to your skills directory
-git clone https://github.com/YOUR_REPO/deep-research.git
+git clone https://github.com/arterm-sedov/deep-research.git
 cp -r deep-research/skills/deep-research ~/.agents/skills/
+```
+
+Or use your AI assistant's skill command:
+
+```
+npx skills add deep-research
 ```
 
 **No Python dependencies.** The agent orchestrates research by following methodology rules.
@@ -28,7 +48,7 @@ skills/deep-research/
 │   └── weasyprint_guidelines.md
 └── templates/
     ├── report_template.md
-    └── mckinsey_report_template.html
+    └── mckinsey_report_template.md
 ```
 
 ## Key Features
@@ -86,15 +106,9 @@ Reports saved to `~/Documents/[Topic]_Research_[YYYYMMDD]/`:
 - Markdown (primary source of truth)
 - HTML (McKinsey style, optional)
 
-## Version History
+## Inspired By
 
-| Version | Date | Changes |
-|---------|------|---------|
-| 3.0 | 2026-03-24 | Removed Python dependencies, agent-orchestrated, free-first providers, rate-limit handling |
-| 2.3.1 | 2026-03-19 | Template/validator harmonization, structured evidence, critique loop-back |
-| 2.3 | 2026-03-19 | Search-cli integration, dynamic year detection, disk-persisted citations |
-| 2.2 | 2025-11-05 | Auto-continuation system |
-| 1.0 | 2025-11-04 | Initial release |
+This skill was inspired by [browser-switch](https://github.com/arterm-sedov/browser-switch) — a skill that helps AI agents choose between different browser automation tools. The clear, concise "Why This Skill Exists" format in this README follows that pattern.
 
 ## License
 

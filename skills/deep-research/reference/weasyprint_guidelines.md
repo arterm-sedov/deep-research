@@ -14,7 +14,7 @@ All reports are generated as Markdown first:
 The agent can generate HTML reports following [html-generation.md](./html-generation.md):
 - McKinsey-style professional formatting
 - Auto-opened in browser
-- Based on templates/mckinsey_report_template.html
+- Based on templates/mckinsey_report_template.md
 
 ### PDF (Legacy/Optional)
 

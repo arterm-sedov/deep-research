@@ -150,7 +150,7 @@ deep-research/
 │   └── continuation.md                 # Auto-continuation
 ├── templates/
 │   ├── report_template.md             # Report structure
-│   └── mckinsey_report_template.html   # HTML styling
+│   └── mckinsey_report_template.md     # Report template
 ├── requirements.txt                   # (empty - no dependencies)
 └── README.md
 ```

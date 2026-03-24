@@ -15,7 +15,7 @@
 ## Generation Steps
 
 ### Step 1: Read McKinsey Template
-Load template from: `./templates/mckinsey_report_template.html`
+Load template from: `./templates/mckinsey_report_template.md`
 
 ### Step 2: Extract Key Metrics
 Extract 3-4 key quantitative findings for dashboard display at top.

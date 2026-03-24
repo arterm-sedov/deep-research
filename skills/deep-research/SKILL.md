@@ -85,7 +85,7 @@ Mode Selection
 
 **Templates:**
 - [report_template.md](./templates/report_template.md) - Report structure
-- [mckinsey_report_template.html](./templates/mckinsey_report_template.html) - HTML styling
+- [mckinsey_report_template.md](./templates/mckinsey_report_template.md) - Report template
 
 **No Python Scripts:** All orchestration happens through agent following methodology rules.
 
