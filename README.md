@@ -108,7 +108,7 @@ Reports saved to `~/Documents/[Topic]_Research_[YYYYMMDD]/`:
 
 ## Inspired By
 
-This skill was inspired by [webcpu/deep-research-skill](https://github.com/webcpu/deep-research-skill) — a research skill that uses parallel Opus agents to synthesize findings with sources. The "Why This Skill Exists" format follows that pattern, and the clear README structure in [browser-switch](https://github.com/arterm-sedov/browser-switch) as well.
+Forked from [199-biotechnologies/claude-deep-research-skill](https://github.com/199-biotechnologies/claude-deep-research-skill) — the original Python-based research skill. This version strips Python dependencies for agent-orchestrated, free-first research. The "Why This Skill Exists" format and README structure also drew inspiration from [browser-switch](https://github.com/arterm-sedov/browser-switch).
 
 ## License
 
