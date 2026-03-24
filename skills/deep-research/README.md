@@ -83,7 +83,7 @@ Key features:
 
 ## Output
 
-Reports saved to `~/Documents/[Topic]_Research_[Date]/`:
+Reports saved to `./[Topic]_Research_[Date]/` in current folder:
 - Markdown (primary source of truth)
 - HTML (McKinsey-style, optional)
 

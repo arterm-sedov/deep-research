@@ -103,7 +103,7 @@ Mode Selection
 - Bibliography (COMPLETE - every citation, no placeholders)
 - Methodology Appendix
 
-**Output files (all to `~/Documents/[Topic]_Research_[YYYYMMDD]/`):**
+**Output files (all to `./[Topic]_Research_[YYYYMMDD]/` in current folder):**
 - Markdown (primary source of truth)
 - HTML (McKinsey style, optional)
 

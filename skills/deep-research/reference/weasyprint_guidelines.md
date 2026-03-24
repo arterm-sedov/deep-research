@@ -5,7 +5,7 @@
 ### Primary: Markdown
 
 All reports are generated as Markdown first:
-- `~/Documents/[Topic]_Research_[YYYYMMDD]/report.md`
+- `./[Topic]_Research_[YYYYMMDD]/report.md`
 - Primary source of truth
 - Human-readable, version-controllable
 
@@ -30,7 +30,7 @@ PDF generation requires WeasyPrint (Python). If PDF is needed, the agent can:
 ## Output Directory Structure
 
 ```
-~/Documents/[Topic]_Research_[YYYYMMDD]/
+./[Topic]_Research_[YYYYMMDD]/
 ├── report.md          # Primary report (always generated)
 ├── report.html        # HTML version (optional)
 └── sources.json       # Source metadata (for continuation)
