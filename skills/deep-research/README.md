@@ -1,12 +1,36 @@
-# Deep Research Skill forClaude Code
+# Deep Research Skill for Claude Code
 
 Enterprise-grade research engine for Claude Code. Produces citation-backed reports using the agent's native capabilities. **No Python dependencies required.**
+
+## Why This Skill Exists
+
+There are many tools for web search and content extraction:
+
+- **WebSearch** — Built into the agent, always available
+- **SearXNG** — Self-hosted, free, no rate limits
+- **Exa MCP** — Semantic search with free tier
+- **Tavily** — Paid API with research synthesis
+- **Playwright/agent-browser** — Browser automation for JS content
+
+Each has different strengths. The problem: knowing which to use isn't always obvious. This skill provides clear guidance on when to use which tool, with automatic fallback when one tool fails.
+
+**Key principles:**
+- **Free first** — Always try free options before paid
+- **Graceful fallback** — If one tool fails, try the next
+- **Human-in-the-loop** — Pause for CAPTCHA/login when needed
+- **Tool-agnostic** — Detect available tools at runtime
 
 ## Installation
 
 ```bash
-# Clone into Claude Code skills directory
-git clone https://github.com/199-biotechnologies/claude-deep-research-skill.git ~/.agents/skills/deep-research
+# Clone into your agent's skills directory
+git clone https://github.com/YOUR_USERNAME/deep-research.git ~/.agents/skills/deep-research
+```
+
+Or use npx skills (if available):
+
+```bash
+npx skills add YOUR_USERNAME/deep-research
 ```
 
 **That's it.** No pip install, no dependencies. The agent is the research engine.
@@ -89,6 +113,29 @@ Reports >18K words auto-continue via recursive agent spawning with context prese
 
 See [providers.md](./reference/providers.md) for details.
 
+## Browser Automation
+
+When API-based search and extraction fail, use browser automation as fallback.
+
+**Why:** JavaScript-rendered content, CAPTCHA, login-protected pages, and rate limits require browser automation.
+
+| Priority | Tool | When to Use |
+|----------|------|-------------|
+| 1 | playwright-cli | General browser automation |
+| 2 | agent-browser | Fast, token-efficient (Vercel) |
+| 3 | MCP playwright | If MCP tools available |
+| 4 | Human handoff | CAPTCHA/login requires human |
+
+See [browser-switch](https://github.com/arterm-sedov/browser-switch) skill for guidance on choosing between playwright-cli and agent-browser.
+
+**Detection:** The skill automatically detects which browser tools are available at runtime.
+
+**Human handoff:** For CAPTCHA or login, the skill opens a headed browser and pauses for human intervention. The human completes the challenge, types "done", and the skill resumes.
+
+**Telegram:** For Telegram channels, use the [telegram-scraper](~/.agents/skills/telegram-scraper/SKILL.md) skill.
+
+See [browser-scraping.md](./reference/browser-scraping.md) for detailed patterns.
+
 ## Architecture
 
 ```
@@ -124,6 +171,7 @@ All coordination happens through agent reasoning, not Python scripts.
 
 | Version | Date | Changes |
 |---------|------|---------|
+| 3.1 | 2026-03-24 | Browser fallback automation, human handoff protocol, telegram support |
 | 3.0 | 2026-03-24 | Removed Python dependencies, agent-orchestrated, free-first providers |
 | 2.3.1 | 2026-03-19 | Template/validator harmonization, structured evidence, critique loop-back |
 | 2.3 | 2026-03-19 | Contract harmonization, search-cli integration, dynamic year detection |
