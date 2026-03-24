@@ -108,7 +108,7 @@ Reports saved to `~/Documents/[Topic]_Research_[YYYYMMDD]/`:
 
 ## Inspired By
 
-This skill was inspired by [browser-switch](https://github.com/arterm-sedov/browser-switch) — a skill that helps AI agents choose between different browser automation tools. The clear, concise "Why This Skill Exists" format in this README follows that pattern.
+This skill was inspired by [webcpu/deep-research-skill](https://github.com/webcpu/deep-research-skill) — a research skill that uses parallel Opus agents to synthesize findings with sources. The "Why This Skill Exists" format follows that pattern, and the clear README structure in [browser-switch](https://github.com/arterm-sedov/browser-switch) as well.
 
 ## License
 
