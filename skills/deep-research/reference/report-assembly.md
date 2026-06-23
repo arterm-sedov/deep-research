@@ -92,7 +92,9 @@ Update sources.json after each section. This survives context compaction and ena
 ## File Organization
 
 **1. Create dedicated folder:**
-- Location: `./[TopicName]_Research_[YYYYMMDD]/` (current folder)
+- Location: `<research_root>/[TopicName]_Research_[YYYYMMDD]/`
+- Default `<research_root>` to the active project's `docs/research/`, unless the user explicitly designates another location.
+- Never mix unrelated projects in shared research storage; ask before writing if no project or approved location is clear.
 - Clean topic name (remove special chars, use underscores)
 
 **2. File naming convention:**
@@ -101,7 +103,7 @@ All files use same base name:
 - `research_report_20251104_topic_slug.html`
 - `research_report_20251104_topic_slug.pdf`
 
-**3. Also save copy to:** `~/.claude/research_output/` (internal tracking)
+**3. Keep working state and optional exports inside the same report folder unless the user requests another location.**
 
 ---
 

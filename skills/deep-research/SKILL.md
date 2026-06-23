@@ -103,7 +103,9 @@ Mode Selection
 - Bibliography (COMPLETE - every citation, no placeholders)
 - Methodology Appendix
 
-**Output files (all to `./[Topic]_Research_[YYYYMMDD]/` in current folder):**
+**Output location:** Use the active project's `docs/research/` by default, or a location explicitly designated by the user. Never mix unrelated projects in shared research storage; if no project or approved location is clear, ask before writing.
+
+**Output files (all to `<research_root>/[Topic]_Research_[YYYYMMDD]/`):**
 - Markdown (primary source of truth)
 - HTML (McKinsey style, optional)
 

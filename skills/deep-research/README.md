@@ -83,7 +83,7 @@ Key features:
 
 ## Output
 
-Reports saved to `./[Topic]_Research_[Date]/` in current folder:
+Reports are saved under the active project's `docs/research/` by default, or a location explicitly designated by the user. Unrelated projects are never mixed in shared research storage.
 - Markdown (primary source of truth)
 - HTML (McKinsey-style, optional)
 

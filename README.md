@@ -102,7 +102,7 @@ deep research in ultradeep mode: compare PostgreSQL vs Supabase for our stack
 
 ## Output
 
-Reports saved to `~/Documents/[Topic]_Research_[YYYYMMDD]/`:
+Reports are saved under the active project's `docs/research/` by default, or a location explicitly designated by the user. Unrelated projects are never mixed in shared research storage.
 - Markdown (primary source of truth)
 - HTML (McKinsey style, optional)
 
